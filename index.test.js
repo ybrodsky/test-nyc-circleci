@@ -7,4 +7,13 @@ describe('Test', () => {
 		const res = index.sum(1, 2);
 		assert.equal(res, 3);
 	});
+
+	it('test 2', () =>  {
+		try {
+
+		} catch (err) {
+			assert.equal(err.message, 'Invalid param');
+		}
+		throw new Error('Should have thrown error');
+	})
 });
