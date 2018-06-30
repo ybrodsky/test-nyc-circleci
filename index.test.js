@@ -10,11 +10,11 @@ describe('Test', () => {
 
 	it('test 2', () =>  {
 		try {
-
+			index.sum('a', 2);
 		} catch (err) {
 			assert.equal(err.message, 'Invalid param');
 			return;
 		}
 		throw new Error('Should have thrown error');
-	})
+	});
 });
