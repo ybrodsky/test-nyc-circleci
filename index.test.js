@@ -13,6 +13,7 @@ describe('Test', () => {
 
 		} catch (err) {
 			assert.equal(err.message, 'Invalid param');
+			return;
 		}
 		throw new Error('Should have thrown error');
 	})
