@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/nyc/bin/nyc.js --reporter=lcov ./node_modules/mocha/bin/mocha index.test.js --exit"
+    "test": "./node_modules/nyc/bin/nyc.js --reporter=lcov ./node_modules/mocha/bin/mocha index.test.js --exit",
+    "report": "./node_modules/.bin/codecov --token=fe7a6171-538d-45ac-8e4f-fed4f22c8884"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "mocha": "^5.2.0",
     "nyc": "^12.0.2"
+  },
+  "devDependencies": {
+    "codecov": "^3.0.2"
   }
 }

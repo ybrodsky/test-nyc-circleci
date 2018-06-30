@@ -29,8 +29,9 @@ jobs:
 
       # run tests!
       - run: yarn test
+      - run: yarn report
       # - run: cd backend && yarn run test:endpoints
       # - run: cd backend && yarn run test:endtoend:ola
-      - store_artifacts:
-          path: ./backend/coverage/lcov-report
+      # - store_artifacts:
+          # path: ./coverage/lcov-report
           # destination: artifact-file
